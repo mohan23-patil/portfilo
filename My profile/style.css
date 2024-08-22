@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.jlogo {
+    width: 60px;
+    height: 30px;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* This ensures that the toggler icon is visible even on a colored or transparent background 
+       i add this using the help of chat gpt. 
+    */
+}
+.togbar{
+    margin-right: 135vh;
+}
+span{
+    color: red;
+}
+.highlight {
+    color: blue;
+    font-size: 0.60rem;
+}
+.text {
+    font-family: inherit;
+    font-size: 1.5rem;
+}
+.img {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 50px; 
+    align-items: center;
+    padding-left: 5vh;
+    margin-right: 10vh;
+}
+
+.img img {
+    width: 60px;
+    height: auto;
+    margin-top: 10vh;
+}
+/* about */
+.about {
+    margin-top: 20vh;
+    margin-bottom: 20px;
+}
+
+.about .text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.about h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about .btn {
+    margin-top: 20px;
+}
+/* Academic section */
+.academic {
+    margin-top: 20vh;
+    margin-bottom: 20px;
+}
+
+.academic .text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.academic h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.academic .btn {
+    margin-top: 20px;
+}
+/* contact */
+.contact-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+.contact-card h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+.contact-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+.contact-card p span {
+    font-weight: bold;
+    color: #333;
+}
+/* about page */
+.aboutus{
+    margin-top: 10vh;
+}
+.aboutus .text1 {
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+.aboutus h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.carousel-item {
+    transition: transform 0.3s ease-in-out;
+}
+/* cv section */
+.cv img{
+    border: 2px solid black;
+    border-radius: 2vh;
+}
+
+@media (max-width: 768px) {
+    .about .text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .about h1 {
+        text-align: center;
+    }
+
+    .about .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    /* academic */
+    .academic .text {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .academic h1 {
+        text-align: center;
+    }
+
+    .academic .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .about p,
+    .aboutus p,
+    .academic p,
+    .project p,
+    .contact-card p {
+        text-align: left !important;
+    }
+    }
